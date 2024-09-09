@@ -1,0 +1,144 @@
+@media (min-width:0px) and (max-width:500px){
+/* subbanner */
+.sub_banner {
+    height: 30rem;
+}
+.sub_banner .sub_banner_name p {font-size: 1.4rem;}
+.sub_banner .sub_banner_name .sub_banner_tit {
+    font-size: 2.8rem;
+}
+.tab_menu ul {
+    gap: .5rem 2.5rem;
+    font-size: 1.4rem;
+}
+.m11_tit {
+    font-size: 1.8rem;
+}
+.txt_wrap p {
+    font-size: 1.5rem;
+}
+.hospital_wrap .txt_wrap {
+    padding: 3rem 1rem;
+}
+.hospital_tit {
+    font-size: 2.2rem;
+    text-align: center;
+    background: rgba(75, 159, 216, 0.2);
+    border-radius: 1rem;
+}
+.hospital_tit.blue_line::before {
+    width: 0;
+    height: 0;
+}
+.machine_wrap .flex_wrap {flex-direction: column;gap: 0;}
+.back_txt {
+    bottom: -60px;
+    font-size: 4rem;
+}
+.machine_wrap {
+    padding-top: 3rem;
+}
+.machine_tab li {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+}
+.store {
+    padding: 3rem 0;
+}
+.store_tit {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: .2rem 2rem;
+}
+.flex_wrap .img_wrap{min-width: auto;}
+.machine_wrap .flex_wrap .img_wrap{min-width: auto;}
+.m31_tit {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+    
+}
+.m35_wrap li{
+    width: 33%;
+}
+/* m37 */
+.m37_wrap li{
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+}
+/* m41 */
+.store_wrap .kakao_wrap {
+    aspect-ratio:4/3;
+}
+.location_tit {
+    font-size: 2rem;
+}
+.store_txt ul {gap: 1rem;}
+.store_txt ul li a {
+    gap: 1rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+.store_txt ul li a img {
+    width: 35px;
+}
+/* m43 */
+.shop_wrap {
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+}
+.shop_wrap form {
+    margin-top: 2rem;
+}
+.shop_wrap .form_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.shop_wrap textarea {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    min-height: 50px;
+    font-size: 1.2rem;
+}
+.shop_wrap label {
+    font-size: 1.4rem;
+}
+.shop_wrap input {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.shop_wrap button {
+    padding: 1rem 4rem;
+    font-size: 14px;
+    border: 1px solid #0056b3;
+}
+.shop {
+    gap: 3rem;
+}
+/* m44 */
+.m4_tab{
+    max-width: 300px;
+margin: 0 auto;}
+.m44_wrap{
+    grid-template-columns: repeat(1,1fr);
+}
+.m44_wrap .part{font-size: 2rem;padding: 1rem;}
+.m44_wrap .part+div{font-size: 1.8rem;}
+.m44_2 .m31_3wrap{font-size: 1.8rem;}
+.m4f{flex-direction: column;align-items: start;gap: 0;}
+.m4_h5 {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+
+}
+@media (min-width:0px) and (max-width:320px){
+    
+    .store_txt ul {
+        flex-direction: column;
+    }
+}

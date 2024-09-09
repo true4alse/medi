@@ -1,0 +1,371 @@
+*{margin: 0;padding: 0;word-break: keep-all;}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,ol{list-style: none;}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: inherit;
+}
+b,strong{font-weight: inherit;}
+i,em,address{font-style: inherit;}
+img{max-width: 100%;}
+.mobile{display: none;}
+/* common */
+html{
+    font-family: 'NanumSquareNeo',"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    background: #fff;
+    color: #1D1D1F;
+}
+.page{
+    overflow: hidden;
+}
+.content_inner{
+    margin:0 auto;
+    max-width: 1280px;
+    width: 95%;
+}
+.inner_top{padding-top: 14rem ; }
+.inner_bottom{padding-bottom: 14rem ; }
+h2{
+    font-size: 4.5rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    color: #004097;
+    gap: .5rem;
+    margin-bottom: 5rem;
+
+}
+h2 span{
+    color: #1D1D1F;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2 span i{font-weight: 800;}
+h3{font-size: 2.5rem;font-weight: 800;}
+h4 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #004097;
+    margin-bottom: 60px;
+}
+h4::before{
+    content: '';
+    width: 45px;
+    aspect-ratio: 1/1;
+    background: url('../img/favicon-96x96.png') no-repeat center / contain;
+}
+h5 {
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    align-items: start;
+    margin: 4rem 0 3rem;
+    gap:  1rem;
+}
+h5::before{
+    content: '|';
+    color: #004097;
+}
+
+
+* .blue_line{
+    position: relative;
+}
+* .blue_line::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -5px;
+    width: calc(100% + 10px);
+    height:50%;
+    background: rgba(75, 159, 216, 0.2);
+    z-index: -1;
+}
+
+p{font-size: 2rem;}
+
+.more:active img{transform: scale(1.2)!important;}
+/* popup */
+#popup_10{z-index:101;}
+#popup_9{z-index:102;}
+#popup_8{z-index:103;}
+#popup_7{z-index:104;}
+#popup_6{z-index:105;}
+#popup_5{z-index:106;}
+#popup_4{z-index:107;}
+#popup_3{z-index:108;}
+#popup_2{z-index:109;}
+#popup_1{z-index:110;}
+
+.popup_wrap {
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+.popup_foot {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.popup_foot>div{
+    display: flex;
+    justify-content: space-between;
+}
+.popup_foot label span{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.popup_close{
+    cursor: pointer;
+}
+.popup_wrap.introani{
+    animation: introanimation .8s forwards ease;
+}
+
+/* footer */
+
+footer{
+    background: #333;
+    color: #CCCCCC;
+}
+
+.footer_inner.bot{
+    /* text-align: center; */
+    padding: 5rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 128rem;
+    width: 90%;
+}
+.f_top{
+    display: flex;
+    font-size: 1.6rem;
+    gap: 3rem;
+    font-weight: 700;
+    /* margin-bottom: 2rem; */
+}
+.f_bot{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    font-weight: 300;
+    gap: 0.5rem 5rem;
+    margin: 2rem 0;
+}
+.f_bot>li span{
+    font-weight: 700;
+    margin-right: 0.5rem;
+} 
+.f_bot+p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.f_logo{max-width: 34rem;}
+/* 개인정보처리방침 */
+.site{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+    font-size: 2.0rem;
+    line-height: 1.7em;
+    font-weight: 400;
+    word-break: keep-all;
+}
+.site h6 {
+    line-height: 25px;
+    padding-left: 0px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+/* 비급여 */
+.time_wrap table {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-left: 0;
+
+}
+table, td {
+    border-spacing: 0px;
+    padding: 0px;
+}
+.time_wrap table tr td {
+    padding: 10px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+tr.bg2 td{
+    background: rgba(0,0,0,0.05);
+    font-weight: 500;
+}
+tr.bg td{
+    background: rgba(0,0,0,0.3);
+    /* color: #fff; */
+    font-weight: 500;
+}
+
+
+
+@media (min-width:0px) and (max-width:1280px){
+    .inner_top{padding-top: 10rem ; }
+    .inner_bottom{padding-bottom: 10rem ; }
+    h2{
+        font-size: 3.5rem;
+        gap: .5rem;
+        margin-bottom: 5rem;
+    }
+    h2 span{
+        font-size: 2rem;
+    }
+    h3{font-size: 2rem;}
+    h5 {font-size: 3rem;}
+    p{font-size: 1.7rem;}
+}
+
+@media (min-width:0px) and (max-width:900px){
+    .inner_top{padding-top: 8rem ; }
+    .inner_bottom{padding-bottom: 8rem ; }
+    h2{
+        font-size: 3rem;
+        gap: .5rem;
+        margin-bottom: 3rem;
+    }
+    h2 span{
+        font-size: 1.7rem;
+    }
+    h3{font-size: 1.6rem;}
+    h4 {
+        gap: 1rem;
+        font-size: 3.5rem;
+        margin-bottom: 40px;
+    }
+    h4::before {
+        width: 40px;
+    }
+    h5 {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    /* popup */
+    .popup_wrap {
+        left: 0!important;
+    }
+    /* footer */
+    .footer_inner.bot{flex-direction: column-reverse;gap: 2rem;}
+    .f_logo {
+        align-self: flex-start;
+        max-width: 24rem;
+    }
+   
+}
+@media (min-width:0px) and (max-width:500px){
+
+    .mobile{display: block;}
+    p{font-size: 1.5rem;}
+
+    /* common */
+    .inner_top{padding-top: 5rem ; }
+    .inner_bottom{padding-bottom: 5rem ; }
+    
+    h2{
+        font-size: 2.5rem;
+        gap: 0rem;
+        margin-bottom: 3rem;
+    }
+    h2 span{
+        font-size: 1.7rem;
+    }
+    h3{font-size: 1.6rem;}
+    
+    h4 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    h4::before {
+        width: 30px;
+    }
+    h5 {
+        font-size: 2.2rem;
+        margin: 2rem 0;
+    }
+    /* popup */
+    .popup_wrap {
+        left: 0!important;
+    }
+    /* footer */
+    .f_top {
+        font-size: 1.3rem;
+        gap: 1rem;
+    }
+    .f_bot {
+        font-size: 1.2rem;
+        gap: 0.5rem 2rem;
+    }
+    .f_bot+p {font-size: 1.1rem;}
+    /* 개인정보처리방침 */
+    .tab_list_inner ul.site_ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tab_list_inner ul.site_ul li:nth-child(-n+2){
+        border-bottom: 0.5px solid #6c6e708b;
+    }
+    .site{
+        width: 92%;
+        margin: 0 auto;
+        max-width: 1500px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 300;
+        word-break: keep-all;
+    }
+    .site h6 {
+        line-height: 1.5;
+        padding-left: 0px;
+        font-size: 2rem;
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+    /* 비급여 */
+    .time_wrap table {
+        font-size: 1.2rem;
+    }
+    .time_wrap table tr td {
+        padding: 8px 2px;
+    }
+}
+@media (min-width:0px) and (max-width:340px){
+    .f_top {
+        font-size: 1.3rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
