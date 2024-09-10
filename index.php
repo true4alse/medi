@@ -289,10 +289,10 @@ include_once(G5_PATH.'/head.php');
                 });
                 
                 $('header').mouseenter(function(){
-                    $('header').addClass('scroll');
+                    //$('header').addClass('scroll');
                 });
                 $('header').mouseleave(function(){
-                    $('header').removeClass('scroll');
+                    //$('header').removeClass('scroll');
                 });
 
                 $('.header_menu').mouseenter(function(){

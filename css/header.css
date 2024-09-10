@@ -1,3 +1,17 @@
+/* lnb */
+.lnb{
+    padding-top: 5px;
+    margin: 0 auto;
+    max-width: 1520px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    & li{
+        padding: 0 20px;
+        font-size:0.8em;
+    }
+}
+
 /* hidden_gnb */
 .hidden_bg{
     opacity: 0;
@@ -109,8 +123,8 @@
     justify-content: space-between;
 }
 /* header */
-header{
-    height: 90px;
+header {
+    /* height: 90px; */
     width: 100%;
     background: rgba(110, 110, 115, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -118,8 +132,9 @@ header{
     position: fixed;
     /* padding: 2rem 0; */
     color: #fff;
-    transition: all .5s ease ;
+    transition: all .5s ease;
     z-index: 100;
+    /* transform: translateY(-24px); */
 }
 header.scroll .h_logo{filter: none;}
 .h_logo{
@@ -127,14 +142,16 @@ header.scroll .h_logo{filter: none;}
     max-width: 290px;    
     filter: invert(100%) sepia(100%) saturate(0) hue-rotate(200deg) brightness(200%) contrast(201%);
 }
-header.scroll{
+header.scroll {
     /* padding: 0; */
-    height: 70px;
-    /* background: rgba(0,0,0,0.5); */
+    /* height: 70px; */
+    /* background: rgba(0, 0, 0, 0.5); */
     color: #1D1D1F;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 19px 35px rgba(0,0,0,0.11);
-    transition: all .5s ease ;
+    box-shadow: 0 19px 35px rgba(0, 0, 0, 0.11);
+    transition: all .5s ease;
+    /* border: 1px solid red; */
+    /* transform: translateY(-24px); */
 }
 header .header_inner{
     height: 100%;
@@ -234,7 +251,7 @@ header.scroll .header_menu .open_menu{filter: none;}
 
 }
 @media (min-width:0px) and (max-width:1024px){
-    
+    .lnb{display: none;}
     /* header */
     header {
         height: 60px;
@@ -260,4 +277,15 @@ header.scroll .header_menu .open_menu{filter: none;}
 
     .h_logo{width: 200px;}
     .header_menu .open_menu{padding: 0;}
+}
+
+.hidden_lnb{
+    border-bottom: 1px solid #2f2f2f;
+    display: flex;
+    /* padding: 10px 20px; */
+    font-size: 1.3rem;
+    font-weight: 700;
+    & li{
+        padding:10px 20px;
+    }
 }

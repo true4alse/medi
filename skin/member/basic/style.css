@@ -17,15 +17,29 @@
 /* ### 기본 스타일 커스터마이징 끝 ### */
 
 /* 회원가입 약관 */
-.register {margin:0 auto}
+.register {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1580px;
+  padding: 130px 0;
+}
 .register:after {display:block;visibility:hidden;clear:both;content:""}
 .register .btn_confirm .btn_submit,
 .register .btn_confirm .btn_close {float:left;height:50px !important;width:49.5%;font-weight:bold;font-size:1.083em}
 .register .btn_confirm {text-align:left}
 .register .btn_confirm .btn_submit {margin-left:1%}
 
-#fregister p {position:relative;text-align:center;color:#fff;height:50px;line-height:50px;font-size:1.1em;background:#f2838f;margin:0 0 10px;border-radius:5px;font-weight:bold}
-#fregister p:before {content:"";position:absolute;top:0;left:0;width:5px;height:50px;border-radius:5px 0 0 5px;background:#da4453}
+#fregister p {position:relative;text-align:center;color:#fff;height:50px;line-height:50px;font-size:1.1em;background:#004097;margin:0 0 10px;border-radius:5px;font-weight:bold}
+#fregister p:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  background: #003072;
+}
 #fregister p i {font-size:1.2em;vertical-align:middle}
 #fregister section {margin:10px auto 15px;border:1px solid #dde7e9;position:relative;border-radius:3px}
 #fregister_chkall {position:relative;text-align:center;background:#f5f7fa;line-height:50px;border:1px solid #e5e9f0;border-radius:3px;margin-bottom:15px}
@@ -87,8 +101,16 @@
 .btn_confirm_reg {margin:20px 0;text-align:center}
 .reg_btn_submit {display:inline-block;background:#3a8afd;color:#fff;text-align:center;border-radius:3px;width:280px;height:57px;line-height:57px;font-size:1.2em;margin:0 auto;font-weight:bold}
 
-.mb_log_cate h2 {width:50%;float:left;padding:20px 0;text-align:center}
-.mb_log_cate .join {width:50%;float:left;padding:20px 0;text-align:center;background:#f7f7f7;color:#6e6e6e}
+.mb_log_cate h2 {
+  width: 50%;
+  float: left;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #6e6e6e;
+  font-weight: 600;
+}
+.mb_log_cate .join {width:50%;float:left;padding:20px 0;text-align:center;background:#f7f7f7;color:#6e6e6e;font-size: 1.5rem;font-weight: 600;}
 .mb_log_cate:after {display:block;visibility:hidden;clear:both;content:""}
 
 .tooltip_icon {display:inline-block;vertical-align:baseline;color:#b3b5b8;border:0;font-size:1.4em;background:transparent;cursor:pointer}
@@ -112,7 +134,7 @@
 #pw_reset .frm_input {margin:10px 0 0}
 
 /* 기존 회원 본인인증 */
-#member_cert_refresh p {position:relative;text-align:center;color:#fff;height:50px;line-height:50px;font-size:1.1em;background:#f2838f;margin:0 0 10px;border-radius:5px;font-weight:bold}
+#member_cert_refresh p {position:relative;text-align:center;color:#fff;height:50px;line-height:50px;font-size:1.1em;background:#004097;margin:0 0 10px;border-radius:5px;font-weight:bold}
 #member_cert_refresh p:before {content:"";position:absolute;top:0;left:0;width:5px;height:50px;border-radius:5px 0 0 5px;background:#da4453}
 #member_cert_refresh p i {font-size:1.2em;vertical-align:middle}
 #member_cert_refresh section {margin:10px auto 15px;border:1px solid #dde7e9;position:relative;border-radius:3px}

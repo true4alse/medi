@@ -14,12 +14,12 @@ $(function(){
         }
     });
     
-    $('header').mouseenter(function(){
-        $('header').addClass('scroll');
-    });
-    $('header').mouseleave(function(){
-        $('header').removeClass('scroll');
-    });
+    // $('header').mouseenter(function(){
+    //     $('header').addClass('scroll');
+    // });
+    // $('header').mouseleave(function(){
+    //     $('header').removeClass('scroll');
+    // });
 
     $('.header_menu').mouseenter(function(){
         $('.gnbinfo').addClass('active');

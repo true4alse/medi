@@ -23,7 +23,7 @@ if (G5_IS_MOBILE) {
                 <form name="fwrite" id="fwrite" action="" onsubmit="" method="post" enctype="multipart/form-data" autocomplete="off">
                     <div class="txt_wrap">
                         <div class="q_logo">
-                            <img src="./img/h_logo.png" alt="메디탑 필라테스 로고">
+                            <img src="/img/h_logo.png" alt="메디탑 필라테스 로고">
                         </div>
                         <div class="b_privacy">
                             <input type="checkbox" id="c1" class="agreeChk labelchk" required>
@@ -86,7 +86,7 @@ if (G5_IS_MOBILE) {
             <P>Copyright 2024 Meditop Pilates & PT. All Rights Reserved.</P>
         </div>
         <div class="f_logo">
-            <img src="img/f_logo.png" alt="메디탑 필라테스 로고">
+            <img src="/img/f_logo.png" alt="메디탑 필라테스 로고">
         </div>
     </div>
 </div>
