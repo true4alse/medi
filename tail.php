@@ -113,6 +113,161 @@ if ($config['cf_analytics']) {
 <!-- } 하단 끝 -->
 
 <script>
+        // 모바일에서 hover를 터치 효과로 바꾸기
+        document.addEventListener("touchstart", function() {}, true);
+        // aos 초기화
+           
+        AOS.init({ 
+            duration: 1000
+        });
+
+        $(function(){
+
+               // 예시: 메뉴 토글 등의 기능 초기화
+               $(window).scroll(function() {
+                    // 현재 스크롤 값 가져오기
+                    var scrollValue = $(this).scrollTop();
+
+                    // 스크롤 값이 1 이상이면 동작하는 부분
+                    if (scrollValue > 1) {
+                        // 여기에 실행하고자 하는 코드를 추가합니다.
+                        $("header").addClass("scroll");
+                    } else {
+                        // 스크롤 값이 1 이하이면 클래스를 제거합니다.
+                        $("header").removeClass("scroll");
+                    }
+                });
+                
+                $('header').mouseenter(function(){
+                    //$('header').addClass('scroll');
+                });
+                $('header').mouseleave(function(){
+                    //$('header').removeClass('scroll');
+                });
+
+                $('.header_menu').mouseenter(function(){
+                    $('.gnbinfo').addClass('active');
+                });
+                $('.header_menu').mouseleave(function(){
+                    $('.gnbinfo').removeClass('active');
+                });
+                $('.header_menu .gnb>li').hover(
+                    function() {
+                        // 마우스를 올렸을 때
+                        $(this).addClass('hover').removeClass('not-hover');
+                        $(this).siblings().addClass('not-hover');
+                    },
+                    function() {
+                        // 마우스를 내렸을 때
+                        $(this).removeClass('hover');
+                        $(this).siblings().removeClass('not-hover');
+                    }
+                );
+                // 모바일 메뉴 열기
+                $(".open_menu").click(function(event){
+                    event.stopPropagation();
+                    $(".hidden_bg").addClass("on");
+                });
+
+                // 모바일 메뉴 닫기
+                $(".close_menu").click(function(event){
+                    event.stopPropagation();
+                    $(".hidden_bg").removeClass("on");
+                });
+
+                // 모바일 메뉴 토글
+                $(".hidden_gnb>li").click(function(event) {
+                    event.stopPropagation();
+                    // 클릭된 메뉴의 하위 메뉴 토글
+                    $(this).find('.top_0').slideToggle();
+
+                    // 다른 메뉴의 하위 메뉴 닫기
+                    $(".hidden_gnb>li").not(this).find('.top_0').slideUp();
+                    
+                    // 현재 메뉴 활성화 표시
+                    $(".hidden_gnb>li>a").removeClass("on");
+                    $(this).children('a').addClass("on");
+                });
+           
+
+        
+       
+                
+                $('.quick_button').click( function(){
+                    $('#quick-placeholder').toggleClass('updown');
+                })
+           
+            
+        // 비주얼 배너 슬라이더
+        $('.main-slider').slick({
+            fade: true,
+            speed: 1000,
+            lazyLoad: 'progressive',
+            touchRatio: 1,
+            autoplay: true,
+            autoplaySpeed: 3000, // 변경된 부분
+            focusOnSelect: true,
+            pauseOnHover: false,
+            vertical: false,
+            draggable: true,
+            dots: true, // 추가된 부분
+            infinite: true,
+            touchThreshold: 100,
+            appendArrows: $('.arrow-con > .arrows'),
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                    },
+                }
+            ]
+        });
+
+		
+        $('.main-slider').on('touchcancel touchmove', function(){
+            $('.main-slider').slick('slickPlay');
+        });
+
+        // 둘러보기
+        $('.gallery-single').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.gallery-nav',
+            autoplay: true,
+            autoplaySpeed: 1000,
+            draggable: true,
+        });
+
+        $('.gallery-nav').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.gallery-single',
+            dots: false,
+            arrows: false,
+            centerMode: false,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+
+                }
+            ],
+            
+        });
+
+        })
+             
+        
+        
+    </script>
+
+<script>
 $(function() {
     // 폰트 리사이즈 쿠키있으면 실행
     font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));

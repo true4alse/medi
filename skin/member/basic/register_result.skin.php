@@ -42,3 +42,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 <div class="btn_confirm_reg">
 	<a href="<?php echo G5_URL ?>/" class="reg_btn_submit">메인으로</a>
 </div>
+<script>
+    $(function(){
+        //밑에있는 지점 위아래로 
+        $('.quick_button').click( function(){
+            $('#quick-placeholder').toggleClass('updown');
+        })
+    })
+    
+
+</script>

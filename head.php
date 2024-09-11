@@ -46,37 +46,37 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <li>
                     <a href="javascript:void(0)">메디탑 필라테스 소개</a>
                     <ul class="left_0 top_0">
-                        <li><a href="./menu1_1.html">메디탑 필라테스</a></li>
-                        <li><a href="./menu1_2.html">협력 병원</a></li>
-                        <li><a href="./menu1_3.html">운영 철학</a></li>
+                        <li><a href="./menu1_1.php">메디탑 필라테스</a></li>
+                        <li><a href="./menu1_2.php">협력 병원</a></li>
+                        <li><a href="./menu1_3.php">운영 철학</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="javascript:void(0)">시설 소개</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu2_1.html">기구 소개</a></li>
-                        <li><a href="/menu2_2.html">둘러보기</a></li>
+                        <li><a href="/menu2_1.php">기구 소개</a></li>
+                        <li><a href="/menu2_2.php">둘러보기</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="javascript:void(0)">프로그램</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu3_1.html">소규모 그룹 필라테스</a></li>
-                        <li><a href="/menu3_2.html">실버 필라테스</a></li>
-                        <li><a href="/menu3_3.html">맨즈 필라테스</a></li>
-                        <li><a href="/menu3_4.html">키즈 필라테스</a></li>
-                        <li><a href="/menu3_6.html">산전 &middot; 산후 관리</a></li>
-                        <li><a href="/menu3_5.html">근골격계 질환</a></li>
-                        <li><a href="/menu3_7.html">수술 후 재활 프로그램</a></li>
+                        <li><a href="/menu3_1.php">소규모 그룹 필라테스</a></li>
+                        <li><a href="/menu3_2.php">실버 필라테스</a></li>
+                        <li><a href="/menu3_3.php">맨즈 필라테스</a></li>
+                        <li><a href="/menu3_4.php">키즈 필라테스</a></li>
+                        <li><a href="/menu3_6.php">산전 &middot; 산후 관리</a></li>
+                        <li><a href="/menu3_5.php">근골격계 질환</a></li>
+                        <li><a href="/menu3_7.php">수술 후 재활 프로그램</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="javascript:void(0)">커뮤니티</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu4_1.html">지점 소개</a></li>
+                        <li><a href="/menu4_1.php">지점 소개</a></li>
                         <li><a href="javascript:alert('준비중입니다.')">수강 후기</a></li>
-                        <li><a href="/menu4_3.html">창업 문의</a></li>
-                        <li><a href="/menu4_4.html">지도자반 교육 문의</a></li>
+                        <li><a href="/menu4_3.php">창업 문의</a></li>
+                        <li><a href="/menu4_4.php">지도자반 교육 문의</a></li>
                         <li><a href="javascript:alert('준비중입니다.')">워크샵</a></li>
                     </ul>
                 </li>
@@ -100,46 +100,46 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     </ul>
     <div class="header_inner">
         <div class="h_logo">
-            <a href="index.html">
+            <a href="/index.php">
                 <img src="/img/h_logo.png" alt="메디탑 필라테스 로고">
             </a>
         </div>
         <div class="header_menu">
             <ul class="gnb">
                 <li>
-                    <a href="/menu1_1.html">메디탑 필라테스 소개</a>
+                    <a href="/menu1_1.php">메디탑 필라테스 소개</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu1_1.html">메디탑 필라테스</a></li>
-                        <li><a href="/menu1_2.html">협력 병원</a></li>
-                        <li><a href="/menu1_3.html">운영 철학</a></li>
+                        <li><a href="/menu1_1.php">메디탑 필라테스</a></li>
+                        <li><a href="/menu1_2.php">협력 병원</a></li>
+                        <li><a href="/menu1_3.php">운영 철학</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="/menu2_1.html">시설 소개</a>
+                    <a href="/menu2_1.php">시설 소개</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu2_1.html">기구 소개</a></li>
-                        <li><a href="/menu2_2.html">둘러보기</a></li>
+                        <li><a href="/menu2_1.php">기구 소개</a></li>
+                        <li><a href="/menu2_2.php">둘러보기</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="/menu3_1.html">프로그램</a>
+                    <a href="/menu3_1.php">프로그램</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu3_1.html">소규모 그룹 필라테스</a></li>
-                        <li><a href="/menu3_2.html">실버 필라테스</a></li>
-                        <li><a href="/menu3_3.html">맨즈 필라테스</a></li>
-                        <li><a href="/menu3_4.html">키즈 필라테스</a></li>
-                        <li><a href="/menu3_6.html">산전 &middot; 산후 관리</a></li>
-                        <li><a href="/menu3_5.html">근골격계 질환</a></li>
-                        <li><a href="/menu3_7.html">수술 후 재활 프로그램</a></li>
+                        <li><a href="/menu3_1.php">소규모 그룹 필라테스</a></li>
+                        <li><a href="/menu3_2.php">실버 필라테스</a></li>
+                        <li><a href="/menu3_3.php">맨즈 필라테스</a></li>
+                        <li><a href="/menu3_4.php">키즈 필라테스</a></li>
+                        <li><a href="/menu3_6.php">산전 &middot; 산후 관리</a></li>
+                        <li><a href="/menu3_5.php">근골격계 질환</a></li>
+                        <li><a href="/menu3_7.php">수술 후 재활 프로그램</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="/menu4_1.html">커뮤니티</a>
+                    <a href="/menu4_1.php">커뮤니티</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu4_1.html">지점 소개</a></li>
+                        <li><a href="/menu4_1.php">지점 소개</a></li>
                         <li><a href="javascript:alert('준비중입니다.')">수강 후기</a></li>
-                        <li><a href="/menu4_3.html">창업 문의</a></li>
-                        <li><a href="/menu4_4.html">지도자반 교육 문의</a></li>
+                        <li><a href="/menu4_3.php">창업 문의</a></li>
+                        <li><a href="/menu4_4.php">지도자반 교육 문의</a></li>
                         <li><a href="javascript:alert('준비중입니다.')">워크샵</a></li>
                     </ul>
                 </li>

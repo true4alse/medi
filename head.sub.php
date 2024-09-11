@@ -64,7 +64,7 @@ if($config['cf_add_meta'])
         <meta name="keywords" content="메디탑 필라테스 | 정형외과가 운영하는 공식 재활 센터, 체형 분석 및 사후 관리, 소규모 그룹, 맨즈 필라테스, 키즈 필라테스, 다이어트, 체형교정, 대화점, 흑석점">
         <meta name="og:type" content="website">
         <meta name="og:site_name" content="메디탑 필라테스">
-        <meta property="og:image" content="./img/wirye.png">
+        <meta property="og:image" content="/img/wirye.png">
         <!--  -->
         <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
@@ -153,8 +153,12 @@ if (!defined('G5_IS_ADMIN')) {
     <link rel="stylesheet" href="/css/slider-custom.css?a">
     <link rel="stylesheet" href="/css/ani.css?ver='.G5_CSS_VER.'">
     <link rel="stylesheet" href="/css/quick.css?ver='.G5_CSS_VER.'">
-    ';
+    <link rel="stylesheet" href="/css/sub.css?ver='.G5_CSS_VER.'">
+    <link rel="stylesheet" href="/css/tab.css?ver='.G5_CSS_VER.'">
+    <link rel="stylesheet" href="/css/mobile_haeun.css?ver='.G5_CSS_VER.'">';
 }
+
+
 
 ?>
 

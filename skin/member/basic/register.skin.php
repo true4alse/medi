@@ -97,6 +97,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                 $("input[name^=agree]").prop("checked", false);
             }
         });
+
+        //밑에있는 지점 위아래로 
+        $('.quick_button').click( function(){
+            $('#quick-placeholder').toggleClass('updown');
+        })
     });
 
     </script>

@@ -507,6 +507,13 @@ jQuery(function($){
     }).on("mouseout", ".tooltip_icon", function(e){
         $(this).next(".tooltip").fadeOut();
     });
+
+	//밑에있는 지점 위아래로 
+	$('.quick_button').click( function(){
+		$('#quick-placeholder').toggleClass('updown');
+	})
+
+
 });
 
 </script>
