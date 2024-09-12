@@ -166,7 +166,9 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 #gnb_all_bg {display:none;background:rgba(0,0,0,0.1);width:100%;height:100%;position:fixed;left:0;top:0;z-index:999}
 
 /* 중간 레이아웃 */
-#wrapper {}
+#wrapper {
+  min-height: calc(100vh - 210px);
+}
 #container_wr:after {display:block;visibility:hidden;clear:both;content:""}
 #container_wr {margin:0 auto;zoom:1}
 #aside {float:right;width:235px;padding:0;height:100%;margin:20px 0 20px 20px}

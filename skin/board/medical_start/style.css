@@ -16,6 +16,7 @@ header{
     margin: 0 auto;
     max-width: 1580px;
     padding: 180px 0 60px;
+    font-size: 14px;
 }
 
 #bo_list:after {display:block;visibility:hidden;clear:both;content:""}

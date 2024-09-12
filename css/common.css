@@ -145,9 +145,10 @@ p{font-size: 2rem;}
 
 /* footer */
 
-footer{
+footer {
     background: #333;
     color: #CCCCCC;
+    /* height: 210px; */
 }
 
 .footer_inner.bot{
