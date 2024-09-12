@@ -203,6 +203,11 @@ if ($w == '' || $w == 'u') {
 
 $is_use_captcha = ((($board['bo_use_captcha'] && $w !== 'u') || $is_guest) && !$is_admin) ? 1 : 0;
 
+// 비회원도 캡차 실행없이 업로드할 수 있도록 수정
+if($board['bo_table']=='medical_start' || $board['bo_table']=='non_medical_start'){
+    $is_use_captcha = 0;
+}
+
 if ($is_use_captcha && !chk_captcha()) {
     alert('자동등록방지 숫자가 틀렸습니다.');
 }
@@ -755,6 +760,11 @@ if (!($w == 'u' || $w == 'cu') && $config['cf_email_use'] && $board['bo_use_emai
 @include_once($board_skin_path.'/write_update.tail.skin.php');
 
 delete_cache_latest($bo_table);
+
+//글을 올린 직후 올린글 상세페이지로 이동하지않고 메인으로 이동합니다.
+if($bo_table == 'medical_start' || $bo_table == 'non_medical_start'){
+    goto_url("/");
+}
 
 $redirect_url = run_replace('write_update_move_url', short_url_clean(G5_HTTP_BBS_URL.'/board.php?bo_table='.$bo_table.'&amp;wr_id='.$wr_id.$qstr), $board, $wr_id, $w, $qstr, $file_upload_msg);
 
