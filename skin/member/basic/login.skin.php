@@ -1,8 +1,30 @@
+
+
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 0);
+?>
+
+
+<?php
+    include_once('./_common.php');
+
+    define('_INDEX_', true);
+    if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+
+    if(defined('G5_THEME_PATH')) {
+        require_once(G5_THEME_PATH.'/index.php');
+        return;
+    }
+
+    if (G5_IS_MOBILE) {
+        include_once(G5_MOBILE_PATH.'/index.php');
+        return;
+    }
+
+    include_once(G5_PATH.'/head.php');
 ?>
 
 <!-- 로그인 시작 { -->
@@ -106,6 +128,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     <?php // 쇼핑몰 사용시 여기까지 반드시 복사해 넣으세요 ?>
 
 </div>
+
+<?php include_once(G5_PATH.'/tail.php'); ?>
 
 <script>
 jQuery(function($){

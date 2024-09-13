@@ -17,6 +17,25 @@
     include_once(G5_PATH.'/head.php');
 ?>            
         
+        <?php
+        // 그누보드 환경 설정 불러오기
+        include_once('/common.php');
+
+        // 게시판 아이디 설정 (가져오려는 게시판 아이디 입력)
+        $bo_table = 'branch'; // 예시 게시판 아이디
+
+        // 쿼리 작성 (최신 글 10개를 가져오는 예시)
+        $sql = "SELECT * FROM g5_write_{$bo_table} ORDER BY wr_id DESC LIMIT 10";
+        $result = sql_query($sql);
+
+        // 게시글 출력
+        while ($row = sql_fetch_array($result)) {
+            echo "<h2>" . $row['wr_subject'] . "</h2>"; // 글 제목
+            echo "<p>" . $row['wr_content'] . "</p>"; // 글 내용
+            echo "<hr>";
+        }
+        ?>
+
         <main>
             <div class="sub_banner ">
                 <div class="sub_bg"></div>
@@ -32,16 +51,18 @@
             <!--  -->
             <div class="tab_menu content_inner">
                 <ul class="m4_tab">
-                    <li class="active"><a href="menu4_1.php">지점 소개</a></li>
-                    <li><a href="menu4_2.php">수강후기</a></li>
-                    <li><a href="menu4_3.php">창업 문의</a></li>
-                    <li><a href="menu4_4.php">지도자반 교육 문의</a></li>
-                    <li><a href="menu4_5.php">워크샵</a></li>
+                    <li class="active"><a href="/menu4_1.php">지점 소개</a></li>
+                    <li><a href="/menu4_2.php">수강후기</a></li>
+                    <li><a href="/menu4_3.php">창업 문의</a></li>
+                    <li><a href="/menu4_4.php">지도자반 교육 문의</a></li>
+                    <li><a href="/menu4_5.php">워크샵</a></li>
                 </ul>
             </div>
             <div class="content_inner inner_top">
                 <h4>지점 소개</h4>
             </div>
+
+
             <div class="store m41">
                 <div class="content_inner">
                     <div class="store_wrap">

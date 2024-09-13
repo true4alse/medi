@@ -61,7 +61,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <li>
                     <a href="javascript:void(0)">프로그램</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu3_1.php">소규모 그룹 필라테스</a></li>
+                        <!-- <li><a href="/menu3_1.php">소규모 그룹 필라테스</a></li> -->
                         <li><a href="/menu3_2.php">실버 필라테스</a></li>
                         <li><a href="/menu3_3.php">맨즈 필라테스</a></li>
                         <li><a href="/menu3_4.php">키즈 필라테스</a></li>
@@ -124,7 +124,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <li>
                     <a href="/menu3_1.php">프로그램</a>
                     <ul class="left_0 top_0">
-                        <li><a href="/menu3_1.php">소규모 그룹 필라테스</a></li>
+                        <!-- <li><a href="/menu3_1.php">소규모 그룹 필라테스</a></li> -->
                         <li><a href="/menu3_2.php">실버 필라테스</a></li>
                         <li><a href="/menu3_3.php">맨즈 필라테스</a></li>
                         <li><a href="/menu3_4.php">키즈 필라테스</a></li>

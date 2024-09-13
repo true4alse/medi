@@ -43,7 +43,13 @@ header{
 #bo_list tbody tr:hover {border-left:2px solid #253dbe}
 #bo_list tbody .even td {background:#fbfbfb}
 
-
+.header_menu .open_menu {
+    display: none;
+    padding-left: 50px;
+    cursor: pointer;
+    align-items: center;
+    filter: none!important;
+}
 #bo_list .td_name {
     width: 90px;
     text-align: center;
@@ -61,6 +67,9 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
+    border: 1px solid #333;
+    margin-bottom: 16px;
+    padding: 10px;
 }
 
 #bo_cate {margin:25px 0}

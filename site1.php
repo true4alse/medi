@@ -1,73 +1,22 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Title" content="메디탑 필라테스 | 정형외과가 운영하는 공식 재활 센터">
-    <meta name="Description" content="메디탑 필라테스 | 정형외과가 운영하는 공식 재활 센터, 체형 분석 및 사후 관리, 소규모 그룹, 맨즈 필라테스, 키즈 필라테스, 다이어트, 체형교정">
-    <meta name="Location" content="경기 고양시 일산서구 중앙로 1564">
-    <link rel="canonical" href="도메인">
-    <meta property="og:title" content="메디탑 필라테스 | 정형외과가 운영하는 공식 재활 센터">
-    <meta property="og:description" content="메디탑 필라테스 | 정형외과가 운영하는 공식 재활 센터, 체형 분석 및 사후 관리, 소규모 그룹, 맨즈 필라테스, 키즈 필라테스, 다이어트, 체형교정">
-    <meta property="og:url" content="도메인">
-    <meta name="keywords" content="메디탑 필라테스 | 정형외과가 운영하는 공식 재활 센터, 체형 분석 및 사후 관리, 소규모 그룹, 맨즈 필라테스, 키즈 필라테스, 다이어트, 체형교정, 대화점, 흑석점">
-    <meta name="og:type" content="website" >
-    <meta name="og:site_name" content="메디탑 필라테스" >
-    <meta property="og:image" content="./img/wirye.png">
-    <!--  -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <link href="도메인/img/head_icon.ico" rel="shortcut icon" type="image/x-icon">
-    <title>메디탑 필라테스</title>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- 프리텐다드 -->
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" as="style" crossorigin>
+<?php
+    include_once('./_common.php');
 
-    <!-- css -->
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/quick.css?ver=1">
-    <link rel="stylesheet" href="./css/sub.css">
-    <link rel="stylesheet" href="./css/tab.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/slider-custom.css">
-    <link rel="stylesheet" href="./css/ani.css">
-    <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/swiper.js"></script>
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- swiper -->
-    <script src="https://fastly.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.js"></script>
-    <link href="https://fastly.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="wrap">
-        <div id="header-placeholder"></div>
-        <!-- quick -->
-        <div id="quick-placeholder"></div>
+    define('_INDEX_', true);
+    if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+
+    if(defined('G5_THEME_PATH')) {
+        require_once(G5_THEME_PATH.'/index.php');
+        return;
+    }
+
+    if (G5_IS_MOBILE) {
+        include_once(G5_MOBILE_PATH.'/index.php');
+        return;
+    }
+
+    include_once(G5_PATH.'/head.php');
+?>  
+        
         <main>
             <div class="sub_banner ">
                 <div class="sub_bg"></div>
@@ -83,8 +32,8 @@
             <!--  -->
             <div class="tab_menu content_inner">
                 <ul>
-                    <li><a href="site1.html">개인정보처리방침</a></li>
-                    <li class="active"><a href="site2.html">이용약관</a></li>
+                    <li><a href="/site2.php">개인정보처리방침</a></li>
+                    <li class="active"><a href="/site1.php">이용약관</a></li>
                 </ul>
             </div>
             <div class="content_inner inner_top inner_bottom">
@@ -154,176 +103,5 @@
             </div>
             
         </main>
-        <footer id="footer-placeholder"></footer>
-    </div>
-            
-    <script>
-        // 모바일에서 hover를 터치 효과로 바꾸기
-        document.addEventListener("touchstart", function() {}, true);
-        // aos 초기화
-        AOS.init({ 
-            duration: 1000
-        });
-    
-        // 헤더와 푸터를 가져와서 각각의 placeholder에 삽입합니다.
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-placeholder').innerHTML = html;
 
-                // 헤더를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
-                // 예시: 메뉴 토글 등의 기능 초기화
-                $(window).scroll(function() {
-                    // 현재 스크롤 값 가져오기
-                    var scrollValue = $(this).scrollTop();
-
-                    // 스크롤 값이 1 이상이면 동작하는 부분
-                    if (scrollValue > 1) {
-                        // 여기에 실행하고자 하는 코드를 추가합니다.
-                        $("header").addClass("scroll");
-                    } else {
-                        // 스크롤 값이 1 이하이면 클래스를 제거합니다.
-                        $("header").removeClass("scroll");
-                    }
-                });
-                
-                $('header').mouseenter(function(){
-                    $('header').addClass('scroll');
-                });
-                $('header').mouseleave(function(){
-                    $('header').removeClass('scroll');
-                });
-
-                $('.header_menu').mouseenter(function(){
-                    $('.gnbinfo').addClass('active');
-                });
-                $('.header_menu').mouseleave(function(){
-                    $('.gnbinfo').removeClass('active');
-                });
-                $('.header_menu .gnb>li').hover(
-                    function() {
-                        // 마우스를 올렸을 때
-                        $(this).addClass('hover').removeClass('not-hover');
-                        $(this).siblings().addClass('not-hover');
-                    },
-                    function() {
-                        // 마우스를 내렸을 때
-                        $(this).removeClass('hover');
-                        $(this).siblings().removeClass('not-hover');
-                    }
-                );
-                // 모바일 메뉴 열기
-                $(".open_menu").click(function(event){
-                    event.stopPropagation();
-                    $(".hidden_bg").addClass("on");
-                });
-
-                // 모바일 메뉴 닫기
-                $(".close_menu").click(function(event){
-                    event.stopPropagation();
-                    $(".hidden_bg").removeClass("on");
-                });
-
-                // 모바일 메뉴 토글
-                $(".hidden_gnb>li").click(function(event) {
-                    event.stopPropagation();
-                    // 클릭된 메뉴의 하위 메뉴 토글
-                    $(this).find('.top_0').slideToggle();
-
-                    // 다른 메뉴의 하위 메뉴 닫기
-                    $(".hidden_gnb>li").not(this).find('.top_0').slideUp();
-                    
-                    // 현재 메뉴 활성화 표시
-                    $(".hidden_gnb>li>a").removeClass("on");
-                    $(this).children('a').addClass("on");
-                });
-
-            });
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('footer-placeholder').innerHTML = html;
-
-                // 불러온 후에 실행되어야 하는 JavaScript 코드 추가
-                
-            });
-        fetch('quick.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('quick-placeholder').innerHTML = html;
-
-                // 불러온 후에 실행되어야 하는 JavaScript 코드 추가
-                
-                $('.quick_button').click( function(){
-                    $('#quick-placeholder').toggleClass('updown');
-                })
-            });
-            
-        // 비주얼 배너 슬라이더
-        $('.main-slider').slick({
-            fade: true,
-            speed: 1000,
-            lazyLoad: 'progressive',
-            touchRatio: 1,
-            autoplay: true,
-            autoplaySpeed: 3000, // 변경된 부분
-            focusOnSelect: true,
-            pauseOnHover: false,
-            vertical: false,
-            draggable: true,
-            dots: true, // 추가된 부분
-            infinite: true,
-            touchThreshold: 100,
-            appendArrows: $('.arrow-con > .arrows'),
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        arrows: false,
-                    },
-                }
-            ]
-        });
-
-		
-        $('.main-slider').on('touchcancel touchmove', function(){
-            $('.main-slider').slick('slickPlay');
-        });
-
-        // 둘러보기
-        $('.gallery-single').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.gallery-nav',
-            autoplay: true,
-            autoplaySpeed: 1000,
-            draggable: true,
-        });
-
-        $('.gallery-nav').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            asNavFor: '.gallery-single',
-            dots: false,
-            arrows: false,
-            centerMode: false,
-            focusOnSelect: true,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3,
-                    }
-
-                }
-            ],
-            
-        });
-        
-        
-    </script>
-</body>
-</html>
+        <?php include_once(G5_PATH.'/tail.php'); ?>

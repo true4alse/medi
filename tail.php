@@ -29,7 +29,7 @@ if (G5_IS_MOBILE) {
                             <input type="checkbox" id="c1" class="agreeChk labelchk" required>
                             <label for="c1" class="infoAgree">
                                 <!-- 개인정보취급방침 -->개인정보취급방침
-                                <a href="site1.html" >[더보기]</a>
+                                <a href="/site1.php" >[더보기]</a>
                             </label>
                         </div>
                     </div>
@@ -68,11 +68,11 @@ if (G5_IS_MOBILE) {
     <div class="footer_inner bot">
         <div>
             <ul class="f_top">
-                <li><a href="site1.html">개인정보처리방침</a></li>
+                <li><a href="/site1.php">개인정보처리방침</a></li>
                 <li>&middot;</li>
-                <li><a href="site2.html">이용약관</a></li>
+                <li><a href="/site2.php">이용약관</a></li>
                 <!-- <li>&middot;</li>
-                <li><a href="./site3.html">비급여 진료비 안내</a></li> -->
+                <li><a href="./site3.php">비급여 진료비 안내</a></li> -->
             </ul>
             <ul class="f_bot">
                 <li>메디탑 필라테스 대화본점</li>
