@@ -17,24 +17,7 @@
     include_once(G5_PATH.'/head.php');
 ?>            
         
-        <?php
-        // 그누보드 환경 설정 불러오기
-        include_once('/common.php');
-
-        // 게시판 아이디 설정 (가져오려는 게시판 아이디 입력)
-        $bo_table = 'branch'; // 예시 게시판 아이디
-
-        // 쿼리 작성 (최신 글 10개를 가져오는 예시)
-        $sql = "SELECT * FROM g5_write_{$bo_table} ORDER BY wr_id DESC LIMIT 10";
-        $result = sql_query($sql);
-
-        // 게시글 출력
-        while ($row = sql_fetch_array($result)) {
-            echo "<h2>" . $row['wr_subject'] . "</h2>"; // 글 제목
-            echo "<p>" . $row['wr_content'] . "</p>"; // 글 내용
-            echo "<hr>";
-        }
-        ?>
+        
 
         <main>
             <div class="sub_banner ">
@@ -62,103 +45,66 @@
                 <h4>지점 소개</h4>
             </div>
 
+            
+            <!-- <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script> -->
 
-            <div class="store m41">
-                <div class="content_inner">
-                    <div class="store_wrap">
-                        <div class="kakao_wrap">
-                            <!-- * 카카오맵 - 지도퍼가기 -->
-                            <!-- 1. 지도 노드 -->
-                            <div id="daumRoughmapContainer1722225009423" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;height: 100%;"></div>
 
-                            <!--
-                                2. 설치 스크립트
-                                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                            -->
-                            <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-                            <!-- 3. 실행 스크립트 -->
-                            <script >
-                                new daum.roughmap.Lander({
-                                    "timestamp" : "1722225009423",
-                                    "key" : "2k7g3"
-                                    // "mapWidth" : "900",
-                                    // "mapHeight" : "700"
-                                }).render();
-                            </script>
-                        </div>
-                        <div class="store_txt">
-                            <h5>대화점</h5>
-                            <div>
-                                <div class="location_tit">주소</div>
-                                <address><p>경기 고양시 일산서구 중앙로 1564 그린월드 204호</p></address>
-                                <div class="location_tit">전화번호</div>
-                                <p class="location_number">0507-1441-9297</p>
+
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=de19dc62886193655e5b2940a383215a"></script>
+            <?php
+                // 그누보드 환경 설정 불러오기
+                // include_once('/common.php');
+
+                // 게시판 아이디 설정 (가져오려는 게시판 아이디 입력)
+                $bo_table = 'branch'; // 예시 게시판 아이디
+
+                // 쿼리 작성 (최신 글 10개를 가져오는 예시)
+                $sql = "SELECT * FROM g5_write_{$bo_table} ORDER BY wr_id DESC LIMIT 10";
+                $result = sql_query($sql);
+
+                // 게시글 출력
+                while ($row = sql_fetch_array($result)) { ?>
+                    <!-- echo "<h2>" . $row['wr_subject'] . "</h2>"; // 글 제목
+                    echo "<p>" . $row['wr_content'] . "</p>"; // 글 내용
+                    echo "<hr>"; -->
+
+                    
+                    <div class="store">
+                        <div class="content_inner">
+                            <div class="store_wrap">
+                                <div class="kakao_wrap">
+                                    <?php echo $row['wr_content']; ?>
+                                </div>
+                                <div class="store_txt">
+                                    <?php echo "<h5>" . $row['wr_subject'] . "</h5>"; ?>
+                                    <div>
+                                        <div class="location_tit">주소</div>
+                                        <address><?php echo "<p>" . $row['wr_2'] . "</p>"; ?></address>
+                                        <div class="location_tit">전화번호</div>
+                                        <p class="location_number"><?php echo $row["wr_1"]; ?></p>
+                                    </div>
+                                    <ul>
+                                        <li  data-aos="zoom-in">
+                                            <a href="<?php echo $row["wr_3"]; ?>">
+                                                <img src="img/m41_1.png" alt="오시는 길">오시는 길
+                                            </a>
+                                        </li>
+                                        <li  data-aos="zoom-in">
+                                            <a href="tel:<?php echo $row["wr_1"]; ?>">
+                                                <img src="img/m41_2.png" alt="전화 문의">전화 문의
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <ul>
-                                <li  data-aos="zoom-in">
-                                    <a href="https://naver.me/5RRn0uY4">
-                                        <img src="img/m41_1.png" alt="오시는 길">오시는 길
-                                    </a>
-                                </li>
-                                <li  data-aos="zoom-in">
-                                    <a href="tel:0507-1441-9297">
-                                        <img src="img/m41_2.png" alt="전화 문의">전화 문의
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="store blue">
-                <div class="content_inner">
-                    <div class="store_wrap">
-                        <div class="kakao_wrap">
-                            <!-- * 카카오맵 - 지도퍼가기 -->
-                            <!-- 1. 지도 노드 -->
-                            <div id="daumRoughmapContainer1722229644521" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;height: 100%;"></div>
 
-                            <!--
-                                2. 설치 스크립트
-                                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                            -->
-                            <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                <?php } ?>
 
-                            <!-- 3. 실행 스크립트 -->
-                            <script >
-                                new daum.roughmap.Lander({
-                                    "timestamp" : "1722229644521",
-                                    "key" : "2k7ht"
-                                    // "mapWidth" : "900",
-                                    // "mapHeight" : "900"
-                                }).render();
-                            </script>
-                        </div>
-                        <div class="store_txt">
-                            <h5>흑석점</h5>
-                            <div>
-                                <div class="location_tit">주소</div>
-                                <address><p>서울 동작구 현충로 80 2층</p></address>
-                                <div class="location_tit">전화번호</div>
-                                <p class="location_number">0507-1310-2649</p>
-                            </div>
-                            <ul>
-                                <li  data-aos="zoom-in">
-                                    <a href="https://naver.me/G7ZX5x0G">
-                                        <img src="img/m41_1.png" alt="오시는 길">오시는 길
-                                    </a>
-                                </li>
-                                <li  data-aos="zoom-in">
-                                    <a href="tel:0507-1310-2649">
-                                        <img src="img/m41_2.png" alt="전화 문의">전화 문의
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            
 
         </main>
 

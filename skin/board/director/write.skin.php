@@ -6,7 +6,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 ?>
 
 <section id="bo_w">
-<h2>지점 등록하기</h2>
     <h2 class="sound_only"><?php echo $g5['title'] ?></h2>
 
     <!-- 게시물 작성/수정 시작 { -->
@@ -52,78 +51,108 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     ?>
 
     <?php if ($is_category) { ?>
-    <!-- <div class="bo_w_select write_div">
+    <div class="bo_w_select write_div">
         <label for="ca_name" class="sound_only">분류<strong>필수</strong></label>
         <select name="ca_name" id="ca_name" required>
             <option value="">분류를 선택하세요</option>
             <?php echo $category_option ?>
         </select>
-    </div> -->
+    </div>
     <?php } ?>
 
     <div class="bo_w_info write_div">
 	    <?php if ($is_name) { ?>
-	        <!-- <label for="wr_name" class="sound_only">이름<strong>필수</strong></label>
-	        <input type="text" name="wr_name" value="<?php echo $name ?>" id="wr_name" required class="frm_input half_input required" placeholder="이름"> -->
+	        <label for="wr_name" class="sound_only">이름<strong>필수</strong></label>
+	        <input type="text" name="wr_name" value="<?php echo $name ?>" id="wr_name" required class="frm_input half_input required" placeholder="이름">
 	    <?php } ?>
 	
 	    <?php if ($is_password) { ?>
-	        <!-- <label for="wr_password" class="sound_only">비밀번호<strong>필수</strong></label>
-	        <input type="password" name="wr_password" id="wr_password" <?php echo $password_required ?> class="frm_input half_input <?php echo $password_required ?>" placeholder="비밀번호"> -->
+	        <label for="wr_password" class="sound_only">비밀번호<strong>필수</strong></label>
+	        <input type="password" name="wr_password" id="wr_password" <?php echo $password_required ?> class="frm_input half_input <?php echo $password_required ?>" placeholder="비밀번호">
 	    <?php } ?>
 	
 	    <?php if ($is_email) { ?>
-			<!-- <label for="wr_email" class="sound_only">이메일</label>
-			<input type="text" name="wr_email" value="<?php echo $email ?>" id="wr_email" class="frm_input half_input email " placeholder="이메일"> -->
+			<label for="wr_email" class="sound_only">이메일</label>
+			<input type="text" name="wr_email" value="<?php echo $email ?>" id="wr_email" class="frm_input half_input email " placeholder="이메일">
 	    <?php } ?>
 	    
 	
 	    <?php if ($is_homepage) { ?>
-	        <!-- <label for="wr_homepage" class="sound_only">홈페이지</label>
-	        <input type="text" name="wr_homepage" value="<?php echo $homepage ?>" id="wr_homepage" class="frm_input half_input" size="50" placeholder="홈페이지"> -->
+	        <label for="wr_homepage" class="sound_only">홈페이지</label>
+	        <input type="text" name="wr_homepage" value="<?php echo $homepage ?>" id="wr_homepage" class="frm_input half_input" size="50" placeholder="홈페이지">
 	    <?php } ?>
 	</div>
 	
     <?php if ($option) { ?>
-    <!-- <div class="write_div">
+    <div class="write_div">
         <span class="sound_only">옵션</span>
         <ul class="bo_v_option">
         <?php echo $option ?>
         </ul>
-    </div> -->
+    </div>
     <?php } ?>
 
     <div class="bo_w_tit write_div">
         <label for="wr_subject" class="sound_only">제목<strong>필수</strong></label>
-        <input type="text" name="wr_subject" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="등록할 지점이름을 입력하세요">
-    </div>
-
-    <div class="write_div">
-        <label for="wr_2" class="sound_only">내용<strong>필수</strong></label>
-        <input class="frm_input full_input" value="<?php echo $wr_2; ?>" type="text" name="wr_2" id="wr_2" placeholder="지점 주소를 입력해주세요. 동 호수까지 정확히 입력해주셔야 합니다.">
-    </div>
-
-    <div class="write_div">
-        <label for="wr_1" class="sound_only">내용<strong>필수</strong></label>
-        <input class="frm_input full_input" type="text" name="wr_1" id="wr_1" placeholder="예시 02-334-4122" value="<?php echo $wr_1; ?>">
-    </div>
-
-    <div class="write_div">
-        <label for="wr_3" class="sound_only">내용<strong>필수</strong></label>
-        <input class="frm_input full_input" type="text" name="wr_3" id="wr_3" placeholder="네이버지도에서 목적지를 검색 후 주소창 내용을 복사해서 여기에 붙여넣기 해주세요." value="<?php echo $wr_3; ?>">
+        
+        <div id="autosave_wrapper" class="write_div">
+            <input type="text" name="wr_subject" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="제목">
+            <?php if ($is_member) { // 임시 저장된 글 기능 ?>
+            <script src="<?php echo G5_JS_URL; ?>/autosave.js"></script>
+            <?php if($editor_content_js) echo $editor_content_js; ?>
+            <button type="button" id="btn_autosave" class="btn_frmline">임시 저장된 글 (<span id="autosave_count"><?php echo $autosave_count; ?></span>)</button>
+            <div id="autosave_pop">
+                <strong>임시 저장된 글 목록</strong>
+                <ul></ul>
+                <div><button type="button" class="autosave_close">닫기</button></div>
+            </div>
+            <?php } ?>
+        </div>
+        
     </div>
 
     <div class="write_div">
         <label for="wr_content" class="sound_only">내용<strong>필수</strong></label>
-        <textarea class="frm_input full_input" type="text" name="wr_content" id="wr_content" placeholder="카카오맵에서 복사한 소스코드를 여기에 붙여넣기 해주세요.">
-            <?php echo $content; ?>
-        </textarea>
+        <div class="wr_content <?php echo $is_dhtml_editor ? $config['cf_editor'] : ''; ?>">
+            <?php if($write_min || $write_max) { ?>
+            <!-- 최소/최대 글자 수 사용 시 -->
+            <p id="char_count_desc">이 게시판은 최소 <strong><?php echo $write_min; ?></strong>글자 이상, 최대 <strong><?php echo $write_max; ?></strong>글자 이하까지 글을 쓰실 수 있습니다.</p>
+            <?php } ?>
+            <?php echo $editor_html; // 에디터 사용시는 에디터로, 아니면 textarea 로 노출 ?>
+            <?php if($write_min || $write_max) { ?>
+            <!-- 최소/최대 글자 수 사용 시 -->
+            <div id="char_count_wrap"><span id="char_count"></span>글자</div>
+            <?php } ?>
+        </div>
+        
     </div>
 
+    <?php for ($i=1; $is_link && $i<=G5_LINK_COUNT; $i++) { ?>
+    <div class="bo_w_link write_div">
+        <label for="wr_link<?php echo $i ?>"><i class="fa fa-link" aria-hidden="true"></i><span class="sound_only"> 링크  #<?php echo $i ?></span></label>
+        <input type="text" name="wr_link<?php echo $i ?>" value="<?php if($w=="u"){ echo $write['wr_link'.$i]; } ?>" id="wr_link<?php echo $i ?>" class="frm_input full_input" size="50">
+    </div>
+    <?php } ?>
 
-   
+    <?php for ($i=0; $is_file && $i<$file_count; $i++) { ?>
+    <div class="bo_w_flie write_div">
+        <div class="file_wr write_div">
+            <label for="bf_file_<?php echo $i+1 ?>" class="lb_icon"><i class="fa fa-folder-open" aria-hidden="true"></i><span class="sound_only"> 파일 #<?php echo $i+1 ?></span></label>
+            <input type="file" name="bf_file[]" id="bf_file_<?php echo $i+1 ?>" title="파일첨부 <?php echo $i+1 ?> : 용량 <?php echo $upload_max_filesize ?> 이하만 업로드 가능" class="frm_file ">
+        </div>
+        <?php if ($is_file_content) { ?>
+        <input type="text" name="bf_content[]" value="<?php echo ($w == 'u') ? $file[$i]['bf_content'] : ''; ?>" title="파일 설명을 입력해주세요." class="full_input frm_input" size="50" placeholder="파일 설명을 입력해주세요.">
+        <?php } ?>
 
-    
+        <?php if($w == 'u' && $file[$i]['file']) { ?>
+        <span class="file_del">
+            <input type="checkbox" id="bf_file_del<?php echo $i ?>" name="bf_file_del[<?php echo $i;  ?>]" value="1"> <label for="bf_file_del<?php echo $i ?>"><?php echo $file[$i]['source'].'('.$file[$i]['size'].')';  ?> 파일 삭제</label>
+        </span>
+        <?php } ?>
+        
+    </div>
+    <?php } ?>
+
 
     <?php if ($is_use_captcha) { //자동등록방지  ?>
     <div class="write_div">

@@ -20,13 +20,26 @@ if (G5_IS_MOBILE) {
             <aside class="quick">
             <div class="content_inner">
                 <div class="quick_button">빠른 상담 신청</div>
-                <form name="fwrite" id="fwrite" action="" onsubmit="" method="post" enctype="multipart/form-data" autocomplete="off">
+                <form name="fwrite" id="fwrite" action="<?php echo G5_URL ?>/bbs/write_update.php?bo_table=fast_consulting" onsubmit="return check_hj();" method="post" enctype="multipart/form-data" autocomplete="off">
+                        
+                        <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>">
+                        <input type="hidden" name="w" value="<?php echo $w ?>">
+                        <input type="hidden" name="bo_table" value="fast_consulting">
+                        <input type="hidden" name="wr_id" value="<?php echo $wr_id ?>">
+                        <input type="hidden" name="sca" value="<?php echo $sca ?>">
+                        <input type="hidden" name="sfl" value="<?php echo $sfl ?>">
+                        <input type="hidden" name="stx" value="<?php echo $stx ?>">
+                        <input type="hidden" name="spt" value="<?php echo $spt ?>">
+                        <input type="hidden" name="sst" value="<?php echo $sst ?>">
+                        <input type="hidden" name="sod" value="<?php echo $sod ?>">
+                        <input type="hidden" name="page" value="<?php echo $page ?>">
+
                     <div class="txt_wrap">
                         <div class="q_logo">
                             <img src="/img/h_logo.png" alt="메디탑 필라테스 로고">
                         </div>
                         <div class="b_privacy">
-                            <input type="checkbox" id="c1" class="agreeChk labelchk" required>
+                            <input type="checkbox" id="c1" class="agreeChk labelchk">
                             <label for="c1" class="infoAgree">
                                 <!-- 개인정보취급방침 -->개인정보취급방침
                                 <a href="/site1.php" >[더보기]</a>
@@ -46,13 +59,40 @@ if (G5_IS_MOBILE) {
                         <input type="text" id="user_named" name="wr_name" value="" placeholder="이름" class="f_name" maxlength="10">
 
                         <label for="hphoneall" class="hide_label">연락처</label>
-                        <input type="text" id="user_hp" name="wr_subject" placeholder="연락처 (- 없이 입력)" class="f_tel" maxlength="11">
+                        <input type="text" id="user_hp" name="wr_subject" placeholder="연락처 (- 없이 입력)" class="f_tel" >
 
-                        <label for="hphoneall" class="hide_label">상담항목</label>
-                        <input type="text" id="user_hp" name="wr_subject" placeholder="상담항목" class="f_tel" maxlength="11">
+                        <label for="consult_list" class="hide_label">상담항목</label>
+                        <input type="text" id="consult_list" name="wr_1" placeholder="상담항목" class="f_tel" maxlength="11">
 
                         <input type="submit" value="문의하기" class="f_submit apply subHead" accesskey="s">
                     </div>
+
+                    <script>
+                        function check_hj(){
+                            var chbox1 = document.getElementById("c1");
+                            var chbox2 = document.getElementById("reser_contents");
+                            var chbox3 = document.getElementById("user_named");
+                            var chbox4 = document.getElementById("user_hp");
+                            if($(chbox1).val()==''){
+                                alert("개인정보수집에 동의해주세요.");
+                                return false;
+                            }else if($(chbox2).val() =="내용입력안함"){
+                                alert("지점을 선택해주세요")
+                                return false;
+                            }else if($(chbox3).val() ==""){
+                                alert("이름을 남겨주세요.");
+                                return false;
+                            }else if($(chbox4).val() ==""){
+                                alert("연락처를 남겨주세요.")
+                                return false
+                            }else{
+                                alert("빠른상담이 접수되었습니다.");
+                                return true;
+                                window.location.href="/"
+                            }
+                        }
+                    </script>
+
                 </form>
             </div>
         </aside>

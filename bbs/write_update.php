@@ -204,7 +204,7 @@ if ($w == '' || $w == 'u') {
 $is_use_captcha = ((($board['bo_use_captcha'] && $w !== 'u') || $is_guest) && !$is_admin) ? 1 : 0;
 
 // 비회원도 캡차 실행없이 업로드할 수 있도록 수정
-if($board['bo_table']=='medical_start' || $board['bo_table']=='non_medical_start'){
+if($board['bo_table']=='medical_start' || $board['bo_table']=='non_medical_start' || $board['bo_table']=='director' || $board['bo_table']=='fast_consulting'){
     $is_use_captcha = 0;
 }
 
@@ -762,7 +762,7 @@ if (!($w == 'u' || $w == 'cu') && $config['cf_email_use'] && $board['bo_use_emai
 delete_cache_latest($bo_table);
 
 //글을 올린 직후 올린글 상세페이지로 이동하지않고 메인으로 이동합니다.
-if($bo_table == 'medical_start' || $bo_table == 'non_medical_start'){
+if($bo_table == 'medical_start' || $bo_table == 'non_medical_start' || $bo_table == 'director' || $bo_table == 'fast_consulting'){
     goto_url("/");
 }
 

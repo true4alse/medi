@@ -340,12 +340,16 @@
     /* background: #000; */
     /* flex: 1; */
 }
+.store_wrap .kakao_wrap>div{
+    width: 100% !important;
+    height: 100% !important;
+}
 .store_wrap .store_txt{
     width: 100%;
     /* flex: 1; */
 }
 .store_wrap .root_daum_roughmap .wrap_map {
-    height: calc(100% - 30px);
+    height: calc(100% - 30px)!important;
 }
 .location_tit{
     font-size: 2.5rem;
