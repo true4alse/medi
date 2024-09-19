@@ -49,11 +49,27 @@ if (G5_IS_MOBILE) {
                     <div class="form_wrap">
                         
                         <label for="cate1" class="hide_label">지점선택</label>
+
+                        <?php 
+                        
+                        $bo_table = 'branch'; // 예시 게시판 아이디
+
+                        // 쿼리 작성 (최신 글 10개를 가져오는 예시)
+                        $sql = "SELECT wr_subject FROM g5_write_{$bo_table} ORDER BY wr_id DESC";
+                        $result = sql_query($sql);
+
+                        // 게시글 출력
+                        $options = '';
+                        while ($row = sql_fetch_array($result)) {
+                            $options .= "<option value='{$row['wr_subject']}'>{$row['wr_subject']}</option>\n";
+                        }
+
+                        ?>
+
+
                         <select  name="wr_content" id="reser_contents"  class="f_cate">
                             <option value="내용입력안함" hidden="">지점 선택</option>
-                            <option value="대화점">대화점</option>
-                            <option value="흑석점">흑석점</option>
-                            <option value="평택역">고덕(평택)점</option>
+                            <?php echo $options; ?>
                         </select>
                         <label for="name" class="hide_label">이름</label>
                         <input type="text" id="user_named" name="wr_name" value="" placeholder="이름" class="f_name" maxlength="10">

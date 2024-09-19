@@ -27,6 +27,34 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php } ?>
     <!-- } 게시판 카테고리 끝 -->
     
+    <!-- 각 지점 탭메뉴 -->
+    <?php 
+                        
+        $bo_table = 'branch'; // 예시 게시판 아이디
+
+        // 쿼리 작성 
+        $sql = "SELECT wr_subject FROM g5_write_{$bo_table} ORDER BY wr_id DESC";
+        $result = sql_query($sql);
+
+        // 게시글 출력
+        if($stx=='') $acc = 'on';
+        else $acc = '';
+        $lists = "<li class='{$acc}'><a href='/bbs/board.php?bo_table=fast_consulting'>전체</a></li>";
+        
+        while ($row = sql_fetch_array($result)) {
+            // $actived = ''
+            if($row['wr_subject']==$stx) $actived = 'on';
+            else $actived = '';
+            $lists .= "<li class='{$actived}'><a href='/bbs/board.php?bo_table=fast_consulting&sca=&sop=and&sfl=wr_content&stx={$row['wr_subject']}'>{$row['wr_subject']}</a></li>";
+        }
+
+    ?>
+    <!-- /bbs/board.php?bo_table=fast_consulting&sca=&sop=and&sfl=wr_content&stx=대화점 -->
+    <ul class="branch_list">
+        <!-- <li class="on"><a href="/bbs/board.php?bo_table=fast_consulting">전체</a></li> -->
+        <?php echo $lists; ?>
+    </ul>
+
     <form name="fboardlist" id="fboardlist" action="<?php echo G5_BBS_URL; ?>/board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
     
     <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
