@@ -80,6 +80,19 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                         <li><a href="/bbs/board.php?bo_table=notice">워크샵</a></li>
                     </ul>
                 </li>
+                <?php if ($is_admin) {  ?>
+                <li>
+                    <a href="javascript:void(0)">관리자페이지</a>
+                    <ul class="left_0 top_0">
+                        <li><a href="/adm/">관리자페이지</a></li>
+                        <li><a href="/bbs/board.php?bo_table=branch">지점 등록</a></li>
+                        <li><a href="/bbs/board.php?bo_table=fast_consulting">빠른상담 확인</a></li>
+                        <li><a href="/bbs/board.php?bo_table=medical_start">의료진 창업 문의 확인</a></li>
+                        <li><a href="/bbs/board.php?bo_table=non_medical_start">비의료진 창업 문의 확인</a></li>
+                        <li><a href="/bbs/board.php?bo_table=director">지도자반 교육 문의 확인</a></li>
+                    </ul>
+                </li>
+                <?php }?>
             </ul>
         </div>
     </div>
@@ -143,6 +156,18 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                         <li><a href="/bbs/board.php?bo_table=notice">워크샵</a></li>
                     </ul>
                 </li>
+                <?php if ($is_admin) {  ?>
+                <li>
+                    <a href="/adm/">관리자페이지</a>
+                    <ul class="left_0 top_0">
+                        <li><a href="/bbs/board.php?bo_table=branch">지점 등록</a></li>
+                        <li><a href="/bbs/board.php?bo_table=fast_consulting">빠른상담 확인</a></li>
+                        <li><a href="/bbs/board.php?bo_table=medical_start">의료진 창업 문의 확인</a></li>
+                        <li><a href="/bbs/board.php?bo_table=non_medical_start">비의료진 창업 문의 확인</a></li>
+                        <li><a href="/bbs/board.php?bo_table=director">지도자반 교육 문의 확인</a></li>
+                    </ul>
+                </li>
+                <?php }?>
             </ul>
             <div class="open_menu" id="open_menu">
                 <img src="/img/open_menu.png" alt="전체메뉴열기">

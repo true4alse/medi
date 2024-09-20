@@ -107,7 +107,7 @@ include_once(G5_PATH.'/head.php');
                     </h2>
                     <ul class="s1_wrap">
                         <li  data-aos="fade-up">
-                            <a href="menu3_5.html">
+                            <a href="menu3_5.php">
                                 <h3>근골격계 질환</h3>
                                 <div class="liwrap">
                                     <div class="more">
@@ -120,7 +120,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </li>
                         <li  data-aos="fade-up">
-                            <a href="menu3_7.html">
+                            <a href="menu3_7.php">
                                 <h3>수술 후 재활 프로그램</h3>
                                 <div class="liwrap">
                                     <div class="more">
@@ -133,7 +133,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </li>
                         <li data-aos="fade-up">
-                            <a href="menu3_6.html">
+                            <a href="menu3_6.php">
                                 <h3>산전/산후관리</h3>
                                 <div class="liwrap">
                                     <div class="more">
@@ -146,7 +146,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </li>
                         <li data-aos="fade-up">
-                            <a href="menu3_3.html">
+                            <a href="menu3_3.php">
                                 <h3>맨즈 필라테스</h3>
                                 <div class="liwrap">
                                     <div class="more">
@@ -159,7 +159,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </li>
                         <li data-aos="fade-up">
-                            <a href="menu3_2.html">
+                            <a href="menu3_2.php">
                                 <h3>실버 필라테스</h3>
                                 <div class="liwrap">
                                     <div class="more">
@@ -172,7 +172,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </li>
                         <li data-aos="fade-up">
-                            <a href="menu3_4.html">
+                            <a href="menu3_4.php">
                                 <h3>키즈 필라테스</h3>
                                 <div class="liwrap">
                                     <div class="more">
@@ -191,7 +191,7 @@ include_once(G5_PATH.'/head.php');
             <section class="sec2">
                 <div class="content_inner  inner_bottom">
                     <div class="s2_box">
-                        <a href="menu4_1.html">
+                        <a href="menu4_1.php">
                             <h2>
                                 메디탑 필라테스 지점 소개
                                 <span>
