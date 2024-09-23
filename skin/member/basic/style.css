@@ -13,9 +13,10 @@ header .h_logo {
 .mbskin {
   position: relative;
   margin: 100px auto 0;
-  width: 360px;
+  width: 96%;
   text-align: center;
   padding-top: 120px;
+  max-width: 400px;
 }
 .mbskin:after {right:10px;left:auto;
   -webkit-transform:skew(8deg) rotate(3deg);
@@ -43,16 +44,8 @@ header .h_logo {
 .register .btn_confirm {text-align:left}
 .register .btn_confirm .btn_submit {margin-left:1%}
 
-#fregister p {position:relative;text-align:center;color:#fff;height:50px;line-height:50px;font-size:1.1em;background:#004097;margin:0 0 10px;border-radius:5px;font-weight:bold}
+#fregister p {padding: 10px;position:relative;text-align:center;color:#fff;font-size:1.1em;background:#004097;margin:0 0 10px;border-radius:5px;font-weight:bold}
 #fregister p:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 50px;
-  border-radius: 5px 0 0 5px;
-  background: #003072;
 }
 #fregister p i {font-size:1.2em;vertical-align:middle}
 #fregister section {margin:10px auto 15px;border:1px solid #dde7e9;position:relative;border-radius:3px}

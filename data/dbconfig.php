@@ -1,5 +1,16 @@
 <?php
 if (!defined('_GNUBOARD_')) exit;
+
+// define('G5_MYSQL_HOST', 'localhost');
+// define('G5_MYSQL_USER', 'meditop2022');
+// define('G5_MYSQL_PASSWORD', 'MeditopPila1!');
+// define('G5_MYSQL_DB', 'meditop2022');
+// define('G5_MYSQL_SET_MODE', true);
+
+// define('G5_TABLE_PREFIX', 'g5_');
+
+// define('G5_TOKEN_ENCRYPTION_KEY', '0dbafa230bf87b4c9b55504dd803dd37'); // 토큰 암호화에 사용할 키
+
 define('G5_MYSQL_HOST', 'localhost');
 define('G5_MYSQL_USER', 'root');
 define('G5_MYSQL_PASSWORD', 'qwqwqw12');

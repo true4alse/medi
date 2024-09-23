@@ -86,7 +86,7 @@
                                     </div>
                                     <ul>
                                         <li  data-aos="zoom-in">
-                                            <a href="<?php echo $row["wr_3"]; ?>">
+                                            <a href="<?php echo $row["wr_3"]; ?>" target="_blank">
                                                 <img src="img/m41_1.png" alt="오시는 길">오시는 길
                                             </a>
                                         </li>
