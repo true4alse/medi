@@ -111,26 +111,14 @@
 
                     // 둘러보기
                     $('.gallery-single').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false,
-                        fade: true,
-                        asNavFor: '.gallery-nav',
-                        autoplay: true,
-                        autoplaySpeed: 1000,
-                        draggable: true,
-                    });
-
-
-                    
-                    $('.gallery-nav').slick({
                         slidesToShow: 5,
-                        slidesToScroll: 1,
-                        asNavFor: '.gallery-single',
-                        dots: false,
-                        arrows: false,
-                        centerMode: false,
-                        focusOnSelect: true,
+                        // slidesToScroll: 1,
+                        // arrows: false,
+                        // fade: true,
+                        // asNavFor: '.gallery-nav',
+                        autoplay: true,
+                        // autoplaySpeed: 1000,
+                        // draggable: true,
                         responsive: [
                             {
                                 breakpoint: 768,
@@ -139,9 +127,41 @@
                                 }
 
                             }
-                        ],
-                        
+                        ]
                     });
+
+                    // $('.gallery-single2').slick({
+                    //     slidesToShow: 5,
+                    //     // slidesToScroll: 1,
+                    //     // arrows: false,
+                    //     // fade: true,
+                    //     // // asNavFor: '.gallery-nav',
+                    //     autoplay: true,
+                    //     // autoplaySpeed: 1000,
+                    //     // draggable: true,
+                    // });
+
+
+                    
+                    // $('.gallery-nav').slick({
+                    //     slidesToShow: 5,
+                    //     slidesToScroll: 1,
+                    //     asNavFor: '.gallery-single',
+                    //     dots: false,
+                    //     arrows: false,
+                    //     centerMode: false,
+                    //     focusOnSelect: true,
+                    //     responsive: [
+                    //         {
+                    //             breakpoint: 768,
+                    //             settings: {
+                    //                 slidesToShow: 3,
+                    //             }
+
+                    //         }
+                    //     ],
+                        
+                    // });
                 })
 
 

@@ -89,7 +89,7 @@
     }
         /* m22 */
     .store{
-        padding: 5rem 0;
+        padding: 0 0 5rem;
     }
     .store_tit {font-size: 2.2rem;margin-bottom: 2rem;}
     .m31_tit {

@@ -248,7 +248,7 @@
 /* menu2_2 */
 .store{
     width: 100%;
-    padding: 7rem 0;
+    padding: 0 0 7rem;
 }
 .store.blue{background:#ebf6fc ;}
 .store.blue .store_tit{background: #fff;}
