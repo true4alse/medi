@@ -167,12 +167,14 @@ if (!defined('G5_IS_ADMIN')) {
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="/js/header.js"></script>
         <script src="/js/swiper.js"></script>
+        <script src="/js/tab.js"></script>
+        
         <!-- aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- slick -->
-        <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-        <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <script src="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!-- swiper -->
         <script src="https://fastly.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.js"></script>
         <link href="https://fastly.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.css" rel="stylesheet">

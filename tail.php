@@ -219,37 +219,6 @@ if ($config['cf_analytics']) {
                         $(this).siblings().removeClass('not-hover');
                     }
                 );
-                // 모바일 메뉴 열기
-                // $(".open_menu").click(function(event){
-                //     event.stopPropagation();
-                //     $(".hidden_bg").addClass("on");
-                // });
-
-                // // 모바일 메뉴 닫기
-                // $(".close_menu").click(function(event){
-                //     event.stopPropagation();
-                //     $(".hidden_bg").removeClass("on");
-                // });
-
-                // // 모바일 메뉴 토글
-                // $(".hidden_gnb>li").click(function(event) {
-                //     // event.stopPropagation();
-                //     // 클릭된 메뉴의 하위 메뉴 토글
-                //     // $(this).find('.top_0').slideToggle();
-                //     $(this).find('.top_0').slideDown();
-
-                //     // 다른 메뉴의 하위 메뉴 닫기
-                //     $(".hidden_gnb>li").not(this).find('.top_0').slideUp();
-                    
-                //     // 현재 메뉴 활성화 표시
-                //     $(".hidden_gnb>li>a").removeClass("on");
-                //     $(this).children('a').addClass("on");
-                //     return false;
-                // });
-           
-
-        
-       
                 
                 $('.quick_button').click( function(){
                     $('#quick-placeholder').toggleClass('updown');
@@ -287,37 +256,7 @@ if ($config['cf_analytics']) {
             $('.main-slider').slick('slickPlay');
         });
 
-        // 둘러보기
-        $('.gallery-single').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.gallery-nav',
-            autoplay: true,
-            autoplaySpeed: 1000,
-            draggable: true,
-        });
-
-        $('.gallery-nav').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            asNavFor: '.gallery-single',
-            dots: false,
-            arrows: false,
-            centerMode: false,
-            focusOnSelect: true,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3,
-                    }
-
-                }
-            ],
-            
-        });
+        
 
         })
              
