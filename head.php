@@ -74,7 +74,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     <a href="javascript:void(0)">커뮤니티</a>
                     <ul class="left_0 top_0">
                         <li><a href="/menu4_1.php">지점 소개</a></li>
-                        <li><a href="javascript:alert('준비중입니다.')">수강 후기</a></li>
+                        <li><a href="/bbs/board.php?bo_table=review">수강 후기</a></li>
                         <li><a href="/menu4_3.php">창업 문의</a></li>
                         <li><a href="/menu4_4.php">지도자반 교육 문의</a></li>
                         <li><a href="/bbs/board.php?bo_table=notice">워크샵</a></li>
@@ -150,7 +150,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     <a href="/menu4_1.php">커뮤니티</a>
                     <ul class="left_0 top_0">
                         <li><a href="/menu4_1.php">지점 소개</a></li>
-                        <li><a href="javascript:alert('준비중입니다.')">수강 후기</a></li>
+                        <li><a href="/bbs/board.php?bo_table=review">수강 후기</a></li>
                         <li><a href="/menu4_3.php">창업 문의</a></li>
                         <li><a href="/menu4_4.php">지도자반 교육 문의</a></li>
                         <li><a href="/bbs/board.php?bo_table=notice">워크샵</a></li>

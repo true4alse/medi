@@ -14,13 +14,13 @@ header{
     margin-bottom: 20px;
     width: 94% !important;
     margin: 0 auto;
-    max-width: 1580px;
+    max-width: 1280px;
     font-size: 14px;
-    padding: 180px 0 60px;
+    padding: 60px 0 60px;
 }
 #bo_w{
     width: 94%;
-    max-width: 1580px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 210px 0;
 }
@@ -178,7 +178,7 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
     background: #fff;
     box-sizing: border-box;
     width: 94% !important;
-    max-width: 1580px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 210px 0;
     font-size: 14px;

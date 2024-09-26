@@ -20,7 +20,7 @@ if (G5_IS_MOBILE) {
             <aside class="quick">
             <div class="content_inner">
                 <div class="quick_button">빠른 상담 신청</div>
-                <form name="fwrite" id="fwrite" action="<?php echo G5_URL ?>/bbs/write_update.php?bo_table=fast_consulting" onsubmit="return check_hj();" method="post" enctype="multipart/form-data" autocomplete="off">
+                <form name="fwrite" id="fwrite" action="<?php echo G5_URL ?>/bbs/write_update.php?bo_table=fast_consulting" onsubmit="return check_hj_fast();" method="post" enctype="multipart/form-data" autocomplete="off">
                         
                         <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>">
                         <input type="hidden" name="w" value="<?php echo $w ?>">
@@ -39,8 +39,8 @@ if (G5_IS_MOBILE) {
                             <img src="/img/h_logo.png" alt="메디탑 필라테스 로고">
                         </div>
                         <div class="b_privacy">
-                            <input type="checkbox" id="c1" class="agreeChk labelchk">
-                            <label for="c1" class="infoAgree">
+                            <input type="checkbox" id="c11" class="agreeChk labelchk">
+                            <label for="c11" class="infoAgree">
                                 <!-- 개인정보취급방침 -->개인정보취급방침
                                 <a href="/site1.php" >[더보기]</a>
                             </label>
@@ -84,12 +84,12 @@ if (G5_IS_MOBILE) {
                     </div>
 
                     <script>
-                        function check_hj(){
-                            var chbox1 = document.getElementById("c1");
+                        function check_hj_fast(){
+                            var chbox1 = document.getElementById("c11");
                             var chbox2 = document.getElementById("reser_contents");
                             var chbox3 = document.getElementById("user_named");
                             var chbox4 = document.getElementById("user_hp");
-                            if($(chbox1).val()==''){
+                            if(!chbox1.checked){
                                 alert("개인정보수집에 동의해주세요.");
                                 return false;
                             }else if($(chbox2).val() =="내용입력안함"){

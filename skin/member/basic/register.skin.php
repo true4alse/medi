@@ -4,7 +4,17 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 0);
 ?>
-
+<div class="sub_banner ">
+                <div class="sub_bg"></div>
+                <div class="sub_banner_inner">
+                    <div class="sub_banner_name">
+                        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            Meditop Pilates & PT.
+                        </p>
+                        <div class="sub_banner_tit">메디탑필라테스에 오신 것을 환영합니다.</div>
+                    </div>
+                </div>
+            </div>
 <!-- 회원가입약관 동의 시작 { -->
 <div class="register">
 

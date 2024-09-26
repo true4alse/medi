@@ -32,11 +32,11 @@
             <!--  -->
             <div class="tab_menu content_inner">
                 <ul class="m4_tab">
-                    <li><a href="menu4_1.php">지점 소개</a></li>
-                    <li><a href="menu4_2.php">수강후기</a></li>
-                    <li><a href="menu4_3.php">창업 문의</a></li>
-                    <li class="active"><a href="menu4_4.php">지도자반 교육 문의</a></li>
-                    <li><a href="menu4_5.php">워크샵</a></li>
+                    <li><a href="/menu4_1.php">지점 소개</a></li>
+                    <li><a href="/bbs/board.php?bo_table=review">수강후기</a></li>
+                    <li><a href="/menu4_3.php">창업 문의</a></li>
+                    <li class="active"><a href="/menu4_4.php">지도자반 교육 문의</a></li>
+                    <li><a href="/bbs/board.php?bo_table=notice">워크샵</a></li>
                 </ul>
             </div>
             <div class="content_inner inner_top inner_bottom">
