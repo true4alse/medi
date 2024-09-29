@@ -115,9 +115,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
     <div class="write_div">
         <label for="wr_content" class="sound_only">내용<strong>필수</strong></label>
-        <textarea class="frm_input full_input" type="text" name="wr_content" id="wr_content" placeholder="카카오맵에서 복사한 소스코드를 여기에 붙여넣기 해주세요.">
-            <?php echo $content; ?>
-        </textarea>
+        <textarea class="frm_input full_input" type="text" name="wr_content" id="wr_content" placeholder="카카오맵에서 복사한 소스코드를 여기에 붙여넣기 해주세요."><?php echo $content; ?></textarea>
     </div>
 
 

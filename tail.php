@@ -124,9 +124,9 @@ if (G5_IS_MOBILE) {
     <div class="footer_inner bot">
         <div>
             <ul class="f_top">
-                <li><a href="/site1.php">개인정보처리방침</a></li>
+                <li><a href="/site2.php">개인정보처리방침</a></li>
                 <li>&middot;</li>
-                <li><a href="/site2.php">이용약관</a></li>
+                <li><a href="/site1.php">이용약관</a></li>
                 <!-- <li>&middot;</li>
                 <li><a href="./site3.php">비급여 진료비 안내</a></li> -->
             </ul>

@@ -41,7 +41,9 @@
         <div class="content_inner inner_top inner_bottom">
             <h4>메디탑 필라테스의 운영철학</h4>
             <div class="m13_wrap">
-                <video src=""></video>
+                <video muted autoplay loop playsinline class="pc">
+                    <source src="video/philosophy.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
         

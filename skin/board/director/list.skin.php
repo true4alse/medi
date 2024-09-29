@@ -11,7 +11,26 @@ if ($is_nogood) $colspan++;
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
-
+<div class="sub_banner ">
+                <div class="sub_bg"></div>
+                <div class="sub_banner_inner">
+                    <div class="sub_banner_name">
+                        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            Meditop Pilates & PT.
+                        </p>
+                        <div class="sub_banner_tit">커뮤니티</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_menu content_inner">
+                <ul class="m4_tab">
+                    <li><a href="/bbs/board.php?bo_table=branch">지점 등록</a></li>
+                    <li><a href="/bbs/board.php?bo_table=fast_consulting">빠른상담 확인</a></li>
+                    <li><a href="/bbs/board.php?bo_table=medical_start">의료진 창업 문의 확인</a></li>
+                    <li><a href="/bbs/board.php?bo_table=non_medical_start">비의료진 창업 문의 확인</a></li>
+                    <li class="active"><a href="/bbs/board.php?bo_table=director">지도자반 교육 문의 확인</a></li>
+                </ul>
+            </div>
 <!-- 게시판 목록 시작 { -->
 <div id="bo_list" style="width:<?php echo $width; ?>">
     <h2><?php echo $board['bo_subject'] ?></h2>

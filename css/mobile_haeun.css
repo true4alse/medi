@@ -47,7 +47,7 @@
 }
 .store_tit {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     padding: .2rem 2rem;
 }
 .flex_wrap .img_wrap{min-width: auto;}

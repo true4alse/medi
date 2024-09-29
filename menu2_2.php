@@ -38,7 +38,7 @@
             <div class="content_inner inner_top ">
                 <h4>메디탑 필라테스 둘러보기</h4>
             </div>
-            <div class="store blue">
+            <div class="store blue m22">
                 <div class="content_inner">
                     <div class="store_tit">대화점</div>
                 </div>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="store">
+            <div class="store m22">
                 <div class="content_inner">
                     <div class="store_tit">흑석점</div>
                 </div>

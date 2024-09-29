@@ -73,4 +73,14 @@ $(function(){
     $('.q_click').click( function(){
         $('.q_toggle').toggleClass('hidden');
     })
+    // main
+    $('.pagenation li').click(function(){
+        $(".pagenation li").removeClass("on")
+        $(this).addClass("on")
+        let idx = $(this).index()
+
+        $(".station .vedio_wrap").removeClass("on")
+        $(".station .vedio_wrap").eq(idx).addClass("on")
+    })
+
 });

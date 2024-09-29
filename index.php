@@ -23,78 +23,26 @@ include_once(G5_PATH.'/head.php');
             <!-- 메인배너 -->
             <!-- 메인배너 -->
             <div class="main_station swiper">
-                <div class="cover">
+                <video muted autoplay loop playsinline class="pc">
+                    <source src="video/main.mp4" type="video/mp4">
+                </video>
+                <!-- <video muted autoplay loop playsinline  class="mo">
+                    <source src="video/mo.mp4" type="video/mp4">
+                </video> -->
+                <!-- <div class="cover">
                     <div class="content_inner  ">
                         <div class="tit">
                             차별화의 시작 <span class="blue_line">“ 메디탑 필라테스 ”</span>
                         </div>
                         <p>당신의 삶에 균형을 찾아드립니다.</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="scroll_down">
                     <p>scroll</p>
                     <div class="arrow"></div>
                 </div>
-                <!-- <ul class="swiper-wrapper train">
-                    <li class="swiper-slide train_item">
-                        <div class="img_box" >
-                            <img src="./img/slider1_1.png" class="bn_pc" alt="메인배너1">
-                            <img src="./img/slider1m_1.png" class="bn_m" alt="메인배너1">
-                        </div>
-                    </li>
-                    <li class="swiper-slide train_item">
-                        <div class="img_box" >
-                            <img src="./img/slider2_1.png" class="bn_pc" alt="메인배너1">
-                            <img src="./img/slider2m_1.png" class="bn_m" alt="메인배너1">
-                        </div>
-                    </li>
-                    <li class="swiper-slide train_item">
-                        <div class="img_box" >
-                            <img src="./img/slider3_1.png" class="bn_pc" alt="메인배너1">
-                            <img src="./img/slider3m_1.png" class="bn_m" alt="메인배너1">
-                        </div>
-                    </li>
-                    
-                </ul>
-                <div class="swiper-pagination"></div> -->
-                <!-- <div class="swiper-button-prev"></div> -->
-                <!-- <div class="swiper-button-next"></div> -->
-                <!-- If we need scrollbar -->
+                
             </div>
-
-            <script>
-
-                // const swiper = new Swiper('.main_station.swiper', {
-                //     // Optional parameters
-                //     // direction: 'vertical',
-                //     speed: 1000,
-                //     loop: true,
-                //     autoplay: {
-                //         delay: 2500,
-                //         disableOnInteraction: false,
-                //     },
-                //     effect: 'fade',
-                //     crossFade:true,
-                
-                //     // If we need pagination
-                //     pagination: {
-                //     el: '.swiper-pagination',
-                //     clickable: true,
-                //     },
-                
-                //     // Navigation arrows
-                //     navigation: {
-                //     nextEl: '.swiper-button-next',
-                //     prevEl: '.swiper-button-prev',
-                //     }
-                
-                //     // And if we need scrollbar
-                //     // scrollbar: {
-                //     // el: '.swiper-scrollbar',
-                //     // },
-                // });
-
-            </script>
             
             <!-- 레슨프로그램-->
             <section class="sec1 page">
@@ -219,28 +167,28 @@ include_once(G5_PATH.'/head.php');
                             <div class="logo_bg">
                                 <img src="img/s3_bg.png" alt="메디탑 필라테스 로고">
                             </div>
-                            <a href="javascript:alert('준비중입니다.')" class="more" data-aos="zoom-in">
+                            <a href="bbs/board.php?bo_table=review" class="more" data-aos="zoom-in">
                                 <img src="img/more_w.png" alt="더보기"> 더 알아보기
                             </a>
                         </div>
                         <ul>
                             <li>
-                                <img src="img/bna_1.png" alt="">
+                                <img src="img/bna_1.png" alt="후기">
                             </li>
                             <li>
-                                <img src="img/bna_2.png" alt="">
+                                <img src="img/bna_2.png" alt="후기">
                             </li>
                             <li>
-                                <img src="img/bna_3.png" alt="">
+                                <img src="img/bna_3.png" alt="후기">
                             </li>
                             <li>
-                                <img src="img/bna_4.png" alt="">
+                                <img src="img/bna_4.png" alt="후기">
                             </li>
                             <li>
-                                <img src="img/bna_5.png" alt="">
+                                <img src="img/bna_5.png" alt="후기">
                             </li>
                             <li>
-                                <img src="img/bna_1.png" alt="">
+                                <img src="img/bna_1.png" alt="후기">
                             </li>
                         </ul>
                     </div>
@@ -253,10 +201,25 @@ include_once(G5_PATH.'/head.php');
                     <h2>
                         메디탑 필라테스를<br>소개합니다!
                     </h2>
-                    <div class="vedio_wrap">
-                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WaygOyS4H80?si=yff1C31Gt5OflWZP&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                    <div class="s4_wrap">
+                        <div class="station">
+                            <div class="vedio_wrap on">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WIFKBRcP4tE?si=h8wnp1wlJMpmR15p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="vedio_wrap ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u2mzf1Onwe4?si=ek4H87rG8-b8ez17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vedio_wrap ready">
+                                준비중
+                            </div>
+                        </div>
+                        <ul class="pagenation">
+                            <li class="on">대화점</li>
+                            <li>흑석점</li>
+                            <li>평택점</li>
+                        </ul>
                     </div>
-
                 </div>
             </section>
             
