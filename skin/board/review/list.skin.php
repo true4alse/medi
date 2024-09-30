@@ -30,7 +30,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <!-- 게시판 목록 시작 { -->
 <div id="bo_gall">
-
+    <h2>수강후기</h2>
     <?php if ($is_category) { ?>
     <nav id="bo_cate">
         <h2><?php echo $board['bo_subject'] ?> 카테고리</h2>
