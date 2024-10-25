@@ -51,10 +51,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <!-- 각 지점 탭메뉴 -->
     <?php 
                         
-        $bo_table = 'branch'; // 예시 게시판 아이디
+        // $bo_table = 'branch'; // 예시 게시판 아이디
 
         // 쿼리 작성 
-        $sql = "SELECT wr_subject FROM g5_write_{$bo_table} ORDER BY wr_id DESC";
+        $sql = "SELECT wr_subject FROM g5_write_branch ORDER BY wr_id DESC";
         $result = sql_query($sql);
 
         // 게시글 출력
